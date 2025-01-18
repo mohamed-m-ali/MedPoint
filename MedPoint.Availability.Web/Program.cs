@@ -16,8 +16,8 @@ namespace MedPoint.Availability.Web
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddSingleton<DoctorAvailabilityRepository, DoctorAvailabilityRepository>();
-            builder.Services.AddSingleton<DoctorAvailabilityService, DoctorAvailabilityService>();
+            builder.Services.AddSingleton<AvailabilityRepository, AvailabilityRepository>();
+            builder.Services.AddSingleton<AvailabilityService, AvailabilityService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

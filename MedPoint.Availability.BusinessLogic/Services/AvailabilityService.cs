@@ -3,20 +3,20 @@ using MedPoint.Availability.DataAccess.Repositories;
 
 namespace MedPoint.Availability.BusinessLogic.Services
 {
-    public class DoctorAvailabilityService
+    public class AvailabilityService
     {
-        private readonly DoctorAvailabilityRepository _doctorAvailabilityRepository;
-        public DoctorAvailabilityService(DoctorAvailabilityRepository doctorAvailabilityRepository)
+        private readonly AvailabilityRepository _doctorAvailabilityRepository;
+        public AvailabilityService(AvailabilityRepository doctorAvailabilityRepository)
         {
             _doctorAvailabilityRepository = doctorAvailabilityRepository;
         }
 
-        public void AddDoctorAvailability(DoctorAvailabilty doctorAvailability)
+        public void AddAvailability(Availabilty doctorAvailability)
         {
             _doctorAvailabilityRepository.AddDoctorAvailability(doctorAvailability);
         }
 
-        public List<DoctorAvailabilty> GetDoctorAvailabilities()
+        public List<Availabilty> GetAvailabilities()
         {
             return _doctorAvailabilityRepository.GetDoctorAvailabilities();
         }
