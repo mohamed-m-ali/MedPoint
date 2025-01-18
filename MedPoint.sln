@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Availability.DataAccess", "MedPoint.Availability.DataAccess\MedPoint.Availability.DataAccess.csproj", "{5195D59F-CAF7-4A75-8651-53311AE13E13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Availability.BusinessLogic", "MedPoint.Availability.BusinessLogic\MedPoint.Availability.BusinessLogic.csproj", "{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Availability.Web", "MedPoint.Availability.Web\MedPoint.Availability.Web.csproj", "{98D2DF9D-014B-4D37-855F-23FB2112D696}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5195D59F-CAF7-4A75-8651-53311AE13E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5195D59F-CAF7-4A75-8651-53311AE13E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5195D59F-CAF7-4A75-8651-53311AE13E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
