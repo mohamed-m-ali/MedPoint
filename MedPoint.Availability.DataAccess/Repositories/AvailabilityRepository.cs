@@ -1,4 +1,6 @@
 ﻿using MedPoint.Availability.DataAccess.Entities;
+using MedPoint.Data.InMemoryDatabase;
+using MedPoint.Data.InMemoryDatabase.Tables;
 
 namespace MedPoint.Availability.DataAccess.Repositories
 {
@@ -13,11 +15,24 @@ namespace MedPoint.Availability.DataAccess.Repositories
         public void AddDoctorAvailability(Availabilty doctorAvailability)
         {
             _doctorAvailabilities.Add(doctorAvailability);
+            Database.Slots.Add(new Slot(
+                doctorAvailability.Id,
+                doctorAvailability.Time,
+                doctorAvailability.DoctorId,
+                doctorAvailability.DoctorName,
+                doctorAvailability.IsReserved,
+                doctorAvailability.Cost));
+
         }
 
         public List<Availabilty> GetDoctorAvailabilities()
         {
-            return _doctorAvailabilities;
+            return Database.Slots.Select(s => new Availabilty(s.Id,
+                s.Time,
+                s.DoctorId,
+                s.DoctorName,
+                s.IsReserved,
+                s.Cost)).ToList();
         }
     }
 }

@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\MedPoint.Data.InMemoryDatabase\MedPoint.Data.InMemoryDatabase.csproj" />
-  </ItemGroup>
-
 </Project>
