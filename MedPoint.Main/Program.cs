@@ -2,6 +2,8 @@
 using MedPoint.Availability.BusinessLogic.Services;
 using MedPoint.Availability.DataAccess.Repositories;
 using MedPoint.Bookings.Application;
+using MedPoint.Appointments.Core;
+using MedPoint.Appointments.Shell;
 namespace MedPoint.Main
 {
     public class Program
@@ -21,6 +23,8 @@ namespace MedPoint.Main
             builder.Services.AddSingleton<AvailabilityRepository, AvailabilityRepository>();
             builder.Services.AddBookingApplication();
             builder.Services.AddBookingInfrastructure();
+            builder.Services.AddAppointmentCore();
+            builder.Services.AddAppointmentShell();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

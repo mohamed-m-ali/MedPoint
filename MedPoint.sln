@@ -29,7 +29,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{B1D084BA-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Main", "MedPoint.Main\MedPoint.Main.csproj", "{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Notification.Gateway", "MedPoint.Notification.Gateway\MedPoint.Notification.Gateway.csproj", "{BC116E88-12C6-42B0-B0F0-DA189B59EC08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Notification.Gateway", "MedPoint.Notification.Gateway\MedPoint.Notification.Gateway.csproj", "{BC116E88-12C6-42B0-B0F0-DA189B59EC08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Appointment", "Appointment", "{E8E35CB3-D259-474B-946F-2B50F753EEDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Appointments.Core", "MedPoint.Appointment.Core\MedPoint.Appointments.Core.csproj", "{3143E79D-6DB8-4028-8B55-6C7E5AA4A2CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Appointments.Shell", "MedPoint.Appointment.Shell\MedPoint.Appointments.Shell.csproj", "{D6FB3334-1619-4B4D-B9B2-6A707DA6EBC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +79,14 @@ Global
 		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3143E79D-6DB8-4028-8B55-6C7E5AA4A2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3143E79D-6DB8-4028-8B55-6C7E5AA4A2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3143E79D-6DB8-4028-8B55-6C7E5AA4A2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3143E79D-6DB8-4028-8B55-6C7E5AA4A2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FB3334-1619-4B4D-B9B2-6A707DA6EBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FB3334-1619-4B4D-B9B2-6A707DA6EBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FB3334-1619-4B4D-B9B2-6A707DA6EBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FB3334-1619-4B4D-B9B2-6A707DA6EBC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +101,8 @@ Global
 		{3B146FFD-B792-4F53-9E9B-6853AC3CB810} = {E198FDF5-AA68-4B1A-A79A-EE9D773B8F40}
 		{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503} = {B1D084BA-0A5C-45D0-BD79-8582C53AB960}
 		{BC116E88-12C6-42B0-B0F0-DA189B59EC08} = {E198FDF5-AA68-4B1A-A79A-EE9D773B8F40}
+		{3143E79D-6DB8-4028-8B55-6C7E5AA4A2CA} = {E8E35CB3-D259-474B-946F-2B50F753EEDD}
+		{D6FB3334-1619-4B4D-B9B2-6A707DA6EBC6} = {E8E35CB3-D259-474B-946F-2B50F753EEDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {015B9167-EB9F-4AFE-ACDF-9B3DFB93852D}
