@@ -1,0 +1,6 @@
+@MedPoint.Main_HostAddress = http://localhost:5067
+
+GET {{MedPoint.Main_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

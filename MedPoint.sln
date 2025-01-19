@@ -3,11 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Availability.DataAccess", "MedPoint.Availability.DataAccess\MedPoint.Availability.DataAccess.csproj", "{5195D59F-CAF7-4A75-8651-53311AE13E13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Availability.DataAccess", "MedPoint.Availability.DataAccess\MedPoint.Availability.DataAccess.csproj", "{5195D59F-CAF7-4A75-8651-53311AE13E13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Availability.BusinessLogic", "MedPoint.Availability.BusinessLogic\MedPoint.Availability.BusinessLogic.csproj", "{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Availability.BusinessLogic", "MedPoint.Availability.BusinessLogic\MedPoint.Availability.BusinessLogic.csproj", "{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Availability.Web", "MedPoint.Availability.Web\MedPoint.Availability.Web.csproj", "{98D2DF9D-014B-4D37-855F-23FB2112D696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Bookings.Domain", "MedPoint.Booking.Domain\MedPoint.Bookings.Domain.csproj", "{F49C76F9-CAC7-4372-89BC-43D2B853E740}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Bookings.Application", "MedPoint.Booking.Application\MedPoint.Bookings.Application.csproj", "{6B2E4973-F469-4315-ABF4-EB9B9B35937F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Bookings.Infrastructure", "MedPoint.Booking.Infrastructure\MedPoint.Bookings.Infrastructure.csproj", "{2AFD9669-C2E6-4568-BE7E-575C6B3DFE40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Availability", "Availability", "{FB423BA4-AA52-4D4B-9010-4A4170C31B54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bookings", "Bookings", "{B4C3BB5C-FF30-433E-80BE-C663F099461E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{6FADA7C7-EA41-4CC6-8FC2-6A1A5354E343}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Data.InMemoryDatabase", "MedPoint.Data.InMemoryDatabase\MedPoint.Data.InMemoryDatabase.csproj", "{CAA73B89-B69E-4916-9B20-9D96F373E1F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notification", "{E198FDF5-AA68-4B1A-A79A-EE9D773B8F40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Notification.Sender", "MedPoint.Notification.Sender\MedPoint.Notification.Sender.csproj", "{3B146FFD-B792-4F53-9E9B-6853AC3CB810}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{B1D084BA-0A5C-45D0-BD79-8582C53AB960}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedPoint.Main", "MedPoint.Main\MedPoint.Main.csproj", "{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedPoint.Notification.Gateway", "MedPoint.Notification.Gateway\MedPoint.Notification.Gateway.csproj", "{BC116E88-12C6-42B0-B0F0-DA189B59EC08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,13 +45,48 @@ Global
 		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98D2DF9D-014B-4D37-855F-23FB2112D696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F49C76F9-CAC7-4372-89BC-43D2B853E740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49C76F9-CAC7-4372-89BC-43D2B853E740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49C76F9-CAC7-4372-89BC-43D2B853E740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49C76F9-CAC7-4372-89BC-43D2B853E740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2E4973-F469-4315-ABF4-EB9B9B35937F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2E4973-F469-4315-ABF4-EB9B9B35937F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2E4973-F469-4315-ABF4-EB9B9B35937F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2E4973-F469-4315-ABF4-EB9B9B35937F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AFD9669-C2E6-4568-BE7E-575C6B3DFE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFD9669-C2E6-4568-BE7E-575C6B3DFE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFD9669-C2E6-4568-BE7E-575C6B3DFE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFD9669-C2E6-4568-BE7E-575C6B3DFE40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA73B89-B69E-4916-9B20-9D96F373E1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA73B89-B69E-4916-9B20-9D96F373E1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA73B89-B69E-4916-9B20-9D96F373E1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA73B89-B69E-4916-9B20-9D96F373E1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B146FFD-B792-4F53-9E9B-6853AC3CB810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B146FFD-B792-4F53-9E9B-6853AC3CB810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B146FFD-B792-4F53-9E9B-6853AC3CB810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B146FFD-B792-4F53-9E9B-6853AC3CB810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC116E88-12C6-42B0-B0F0-DA189B59EC08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5195D59F-CAF7-4A75-8651-53311AE13E13} = {FB423BA4-AA52-4D4B-9010-4A4170C31B54}
+		{8B6FDF13-424E-4C1D-8D8D-931FE4E3D3FD} = {FB423BA4-AA52-4D4B-9010-4A4170C31B54}
+		{F49C76F9-CAC7-4372-89BC-43D2B853E740} = {B4C3BB5C-FF30-433E-80BE-C663F099461E}
+		{6B2E4973-F469-4315-ABF4-EB9B9B35937F} = {B4C3BB5C-FF30-433E-80BE-C663F099461E}
+		{2AFD9669-C2E6-4568-BE7E-575C6B3DFE40} = {B4C3BB5C-FF30-433E-80BE-C663F099461E}
+		{CAA73B89-B69E-4916-9B20-9D96F373E1F7} = {6FADA7C7-EA41-4CC6-8FC2-6A1A5354E343}
+		{3B146FFD-B792-4F53-9E9B-6853AC3CB810} = {E198FDF5-AA68-4B1A-A79A-EE9D773B8F40}
+		{20C56EDE-A4FE-4D98-A4E7-A3FB8F842503} = {B1D084BA-0A5C-45D0-BD79-8582C53AB960}
+		{BC116E88-12C6-42B0-B0F0-DA189B59EC08} = {E198FDF5-AA68-4B1A-A79A-EE9D773B8F40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {015B9167-EB9F-4AFE-ACDF-9B3DFB93852D}
